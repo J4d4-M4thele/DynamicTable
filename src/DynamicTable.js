@@ -6,8 +6,7 @@ function DynamicTable(){
  const column = Object.keys(TableData[0]);
 
  // get table heading data
- const ThData =()=>{
-    
+ const ThData =()=>{ 
      return column.map((data)=>{
          return <th key={data}>{data}</th>
      })
@@ -15,7 +14,6 @@ function DynamicTable(){
 
 // get table row data
 const tdData =() =>{
-   
      return TableData.map((data)=>{
        return(
            <tr>
@@ -28,8 +26,6 @@ const tdData =() =>{
        )
      })
 }
-
-
   return (
       <table className="table">
         <thead>
